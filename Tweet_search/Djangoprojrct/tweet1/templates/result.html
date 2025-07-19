@@ -1,0 +1,9 @@
+{% if tweets %}
+    <ul>
+        {% for tweet in tweets %}
+            <li>{{ tweet.text }}</li>
+        {% endfor %}
+    </ul>
+{% else %}
+    <p>No tweets found.</p>
+{% endif %}
